@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+:root {
+    --color-primary: hsl(223, 87%, 63%);
+
+    --color-secondary-1: hsl(223,100%,88%);
+    --color-secondary-2: hsl(354,100%,66%);
+
+    --color-neutral-1: hsl(0, 0%,59%);
+    --color-neutral-2: hsl(209,33%, 12%);
+
+    --ff-primary: "Libre Franklin", sans-serif;
+
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+.card {
+    padding: 1.6rem;
+    text-align: center;
+    min-width: 375px;
+}
+
+.card__title img {
+    margin: 4rem 0;
+    font-size: 1.4rem;
+    max-height: 1.5rem;
+}
+
+.card__title h2 {
+    font-weight: 100;
+    color:hsl(0, 0%,59%);
+}
+
+.card__title h2 strong {
+    font-weight: 700;
+    color: #333;
+}
+
+.card__title small {
+    margin: 3rem 0;
+    font-size: .9rem;
+    display: inline-block;
+}
+
+.card__form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card__form input[type="email"]
+{
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    border-radius: 1000px;
+    outline: none;
+    border: none;
+    border: 1px solid hsl(223,100%,88%);
+}
+
+.card__form input[type="submit"]
+{
+    border-radius: 1000px;
+    border: none;
+    background:hsl(223, 87%, 63%);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: .6rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .3);
+}
+
+.card__footer {
+    margin-top: 8rem;
+
+}
+
+.card__footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 0;
+}
+
+.card__footer ul li {
+    height: 40px;
+}
+
+.card__footer li a {
+    margin: 1.6rem;
+    border: 1px solid hsl(223,100%,88%);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color:hsl(223, 87%, 63%)
+}
+
+.card__footer small {
+    font-size: .6rem;
+    color:hsl(0, 0%,59%);
+}
+
+@media (min-width: 500px) {
+    body {
+    }
+
+    .card {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card__form {
+        width: 100%;
+        display: flex;
+    }
+
+    .card__form input[type='email']
+    {
+        width: 70%;
+    }
+
+    .card__form input[type='submit']
+    {
+        width: 30%;
+    }
+
+}
